@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+header ,footer{
+  color: whitesmoke;
+  background-color: #405b77;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+footer{
+  color: whitesmoke;
+  background-color: #405b77;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+main{
+  text-align: center;
+}
+
+div{
+  text-align: center;
+  margin: auto;
+}
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
+}

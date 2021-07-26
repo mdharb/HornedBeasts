@@ -1,5 +1,10 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CardColumns from 'react-bootstrap/CardColumns';
+import Card from 'react-bootstrap/Card';
+
+
 class HornedBeasts extends React.Component {
 
     constructor(props) {
@@ -28,9 +33,23 @@ class HornedBeasts extends React.Component {
         return (
 
             <div>
-                <h2>{this.props.title}</h2>
+                {/* <h2>{this.props.title}</h2>
                 <img src={this.props.imgUrl} alt={this.props.title} onClick = {this.favorite} />
-                <p>{this.props.description}</p>
+                <p>{this.props.description}</p> */}
+
+<CardColumns>
+  <Card style={{width: '30rem', class: 'col d-flex justify-content-center'}}>
+    <Card.Img variant="top" src={this.props.imgUrl} onClick = {this.favorite} />
+    <Card.Body>
+      <Card.Title>{this.props.title}</Card.Title>
+      <Card.Text>
+      {this.props.description} <br /> <span>Likes &#10084;&#65039;: {this.state.favoriteCounter}</span>
+      </Card.Text>
+
+    </Card.Body>
+  </Card>
+  </CardColumns>
+                
             </div>
         )
     }
