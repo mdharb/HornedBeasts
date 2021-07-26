@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Progress details:
+
+#### Number and name of feature: 
+
+- Feature #1: 2 hours.
+- Feature #2: 30 minutes.
+- Feature #3: 1:30 hours.
+
+### Estimate of time needed to complete: 2 hours
+
+### Start time':'
+
+1:55 pm
+
+### Finish time':'
+
+5:55 pm
+
+### Actual time needed to complete':'
+
+4 hours
+
 ## Available Scripts
 
 In the project directory, you can run:
