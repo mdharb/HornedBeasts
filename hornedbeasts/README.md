@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Progress details:
+## Progress details (Lab-02):
 
 #### Number and name of feature: 
 
@@ -12,17 +12,41 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Estimate of time needed to complete: 2 hours
 
-### Start time':'
+### Start time:
 
 1:55 pm
 
-### Finish time':'
+### Finish time:
 
 5:55 pm
 
-### Actual time needed to complete':'
+### Actual time needed to complete:
 
 4 hours
+
+***
+
+## Progress details (Lab-03):
+
+#### Number and name of feature: 
+
+- Feature #1: 9 hours.
+
+### Estimate of time needed to complete: 2 hours
+
+### Start time:
+
+5:00 pm
+
+### Finish time:
+
+2:20 am
+
+### Actual time needed to complete:
+
+7 hours
+
+***
 
 ## Available Scripts
 
