@@ -8,15 +8,15 @@ import HornedBeasts from './HornedBeasts';
 class Main extends React.Component {
 
   render() {
-    return(dataArray.map((value) => 
+    return(dataArray.map((value) =>
       <div>
         <main>
           <HornedBeasts
             title={value.title}
             imgUrl= {value.image_url}
-            description = {value.description}  />
+            description = {value.description}/>
         </main>
-      </div>)          
+      </div>)
     );
   }
 }
