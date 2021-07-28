@@ -1,11 +1,13 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.css';
 
 import Header from './components/header';
 import Main from './components/main';
 import Footer from './components/footer';
 import Data from './components/data.json';
 import SelectedBeasts from './components/SelectedBeast';
+import FilterForm from './components/FilterForm';
 
 
 class App extends React.Component {
@@ -14,9 +16,23 @@ class App extends React.Component {
     this.state = {
       beasts: Data,
       modal: false,
-      favoritedBeast: {}
+      favoritedBeast: {},
+      selectedHorn: 0
     };
   }
+
+    selectedHorn = (number) => {
+      this.setState({
+        selectedHorn: parseInt(number)
+      });
+    }
+
+    filterBeasts = () => {
+      let filteredBeasts = Data.filter( (value) => value.horns === this.state.selectedHorn);
+      this.setState({
+        beasts: filteredBeasts
+      });
+    }
 
     showModal = (name) => {
       let favoritedBeast = Data.find(beast => beast.title === name);
@@ -31,6 +47,9 @@ class App extends React.Component {
       return (
         <div>
           <Header/>
+          <FilterForm
+            selectedHorn={this.selectedHorn}
+            filter={this.filterBeasts}/>
           <Main
             beasts = {this.state.beasts}
             showModal = {this.showModal}/>
